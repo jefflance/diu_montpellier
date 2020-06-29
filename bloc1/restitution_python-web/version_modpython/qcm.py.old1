@@ -1,0 +1,36 @@
+# -*- coding: utf-8 -*-
+
+from mod_python import apache, util
+
+from template import *
+
+def index(req):
+    """ Renvoie la page d'acceuil du QCM.
+
+    Entrée: Rien
+    Sortie: Rien
+    """
+
+    req.content_type = 'text/html'
+    req.send_http_header()
+
+    body="""
+    <p>Bonjour !<p/>
+    <p>Veuillez entrer votre nom.</p>
+
+    <form action='/cgi-bin/qcm.py' method='post'>
+    Prénom: <input type='text' name='prenom' required><br>
+    Nom: <input type='text' name='nom' required><br>
+    Nombre de questions du QCM:
+    <input type='text' name='nombre_questions' value='5'><br>
+    <input type='hidden' name='qcm_on' value=1><br><br>
+
+    <input type='submit' value='Démarrer le QCM'>
+    </form>
+    """
+
+    content = html_haut() + body + html_bas()
+
+    req.write(content)
+
+    return apache.OK

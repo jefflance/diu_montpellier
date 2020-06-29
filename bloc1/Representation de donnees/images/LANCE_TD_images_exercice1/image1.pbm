@@ -1,0 +1,6 @@
+P1          # Format : PBM
+4 4         # Dimensions : largeur hauteur
+1 1 1 1     # Première ligne
+1 0 0 1     # Deuxième ligne
+1 0 0 1     # Troisième ligne
+1 1 1 1     # Quatrième ligne

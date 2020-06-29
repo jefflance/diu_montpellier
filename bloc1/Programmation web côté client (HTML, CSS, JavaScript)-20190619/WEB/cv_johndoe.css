@@ -1,0 +1,60 @@
+header {
+    /* border: 1px solid red; */
+    width: 90%;
+    height: 200px;
+    margin: auto;
+}
+
+header p {
+    font-size: 18pt;
+    font-weight: bold;
+    color: darkred;
+}
+
+#lheader {
+    /* border: 1px solid green; */
+    width: 40%;
+    float: left;
+    font-weight: bold;
+}
+
+#rheader {
+    /* border: 1px solid green; */
+    width: 40%;
+    margin-left: 60%;
+}
+
+#photo {
+    width: 30%;
+    height: 30%;
+}
+
+.content {
+    width: 90%;
+    margin: auto;
+    /* border: 1px solid orange; */
+    margin-top: 50px;
+}
+
+#lcontent {
+    /* border: 1px solid blue; */
+    width: 45%;
+    float: left;
+    padding-top: 1px;
+}
+
+#rcontent {
+    /* border: 1px solid blue; */
+    width: 45%;
+    margin-left: 55%;
+    padding-top: 1px;
+}
+
+.content article {
+    /* margin-top: 50px; */
+}
+
+.content article p {
+    font-weight: bold;
+    color: darkred;
+}

@@ -1,0 +1,8 @@
+P3                  # Format : PGM
+5 5                 # Dimensions : largeur hauteur
+1                   # Niveaux de couleurs, il n'y en a que 2 car par de mélange des 3 couleurs de base (R, V et B)
+0 0 1  0 0 1  0 0 1  0 0 1  0 0 1
+0 0 1  1 0 0  1 0 0  1 0 0  0 0 1
+0 0 1  1 0 0  0 1 0  1 0 0  0 0 1
+0 0 1  1 0 0  1 0 0  1 0 0  0 0 1
+0 0 1  0 0 1  0 0 1  0 0 1  0 0 1
